@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Basic reset and styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('C:\\Users\\Selva\\Downloads\\job (1).jpg') no-repeat center center; /* Update path accordingly */
+  background-size: cover; /* Make sure the image covers the entire background */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header {
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with some transparency */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with some transparency */
+  border-radius: 10px;
+}
+
+.container h2 {
+  margin-top: 0;
+}
+
+button {
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.active {
+  background-color: #1976D2;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
+
+a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.signup-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.role-selection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.role-button {
+  background-color: #2196F3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.role-button.active {
+  background-color: #1976D2;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .role-selection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .role-button {
+    margin: 10px 0;
   }
 }
+
+
+/* Existing styles... */
+
+/* New styles for social media icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  width: 50px; /* Size of the round button */
+  height: 50px; /* Size of the round button */
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #333; /* Background color of the button */
+}
+
+.social-icon img {
+  width: 100%; /* Ensure the image fills the button */
+  height: 100%; /* Ensure the image fills the button */
+  object-fit: cover; /* Ensure the image is properly cropped */
+}
+
+/* Existing styles for buttons, inputs, etc. */
+
